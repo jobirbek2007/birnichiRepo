@@ -1,0 +1,130 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(18, 19, 18, 0.884);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    font-size: 18px;
+    color: rgb(225, 218, 218);
+}
+
+.menu-toggle {
+    color: rgb(255, 13, 0);
+    display: none;
+} */
+
+@media (max-width:800px) {
+    .nav ul{
+        
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 400px;
+        color: rgb(234, 24, 24);
+        /* color: blue; */
+        /* display: none
+         */
+
+    }
+
+    .menu-toggle {
+        display: none;
+        color: rgb(235, 228, 228);
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+@media (max-width:600px) {
+    .header {
+        display: block;
+        background-color: rgb(58, 21, 222);
+    }
+    .header h1{
+        flex-direction: column;
+        margin-left: 400px;
+    }
+}
+
+/* card start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb( 0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+    background-color: green;
+}
+
+/*  media queries uchun responsiv sozlamalar */
+@media (min-width:1200px){
+    .card{
+        flex: 0 0 300px; 
+    }
+
+}
+@media (max-width:767px) {
+    .card{
+        flex: 0 0 300px;
+    }
+}
+
+@media (max-width:480px) {
+    .card{
+        flex:0 0 300px ;
+    }
+}
